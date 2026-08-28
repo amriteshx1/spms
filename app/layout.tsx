@@ -23,7 +23,7 @@ const barlow = Barlow_Condensed({
 export const metadata: Metadata = {
   title: "Sailanee Packers And Movers | SPMS, Ranchi",
   description:
-    "Professional packing, moving and transportation. Protecting your goods like our own. 30+ years of experience. Pan-India service from Ranchi, Jharkhand.",
+    "Professional packing, moving and transportation. Always for your moving needs. 30+ years of experience. Pan-India service from Ranchi, Jharkhand.",
 };
 
 export const viewport: Viewport = {
