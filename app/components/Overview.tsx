@@ -1,5 +1,6 @@
 import { overview } from "../content";
 import { Reveal } from "./Reveal";
+import { SpmsLottie } from "./SpmsLottie";
 
 export function Overview() {
   return (
@@ -16,10 +17,20 @@ export function Overview() {
         >
           Company Overview
         </h2>
-        <div className="max-w-3xl space-y-5 text-dust">
-          {overview.paragraphs.map((paragraph) => (
-            <p key={paragraph.slice(0, 24)}>{paragraph}</p>
-          ))}
+        <div className="grid items-center gap-8 md:grid-cols-2 md:gap-10 lg:gap-14">
+          <div className="space-y-5 text-dust">
+            {overview.paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 24)}>{paragraph}</p>
+            ))}
+          </div>
+          <div className="flex w-full items-center justify-center">
+            <SpmsLottie
+              src="/secondOne-spms.lottie"
+              aspectWidth={1700}
+              aspectHeight={1000}
+              className="w-full max-w-[22rem] md:max-w-[26rem]"
+            />
+          </div>
         </div>
       </Reveal>
 
