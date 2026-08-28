@@ -1,7 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 import { company, contact, stats } from "../content";
-import { HouseFrame } from "./Marks";
 
 const waybill = [
   { stamp: "Origin", value: "Ranchi, Jharkhand" },
@@ -17,7 +16,6 @@ export function Hero() {
       aria-labelledby="hero-title"
     >
       <div className="relative">
-        <HouseFrame draw className="text-gold" />
         <div className="relative z-10 flex flex-col items-center px-6 py-10 text-center sm:px-12 sm:py-12 md:px-16 md:py-14">
           <div
             className="hero-fade w-[min(16.5rem,70vw)] md:w-[min(18rem,36vw)]"
