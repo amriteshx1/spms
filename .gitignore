@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+.lottie-inspect/
 
 # debug
 npm-debug.log*
