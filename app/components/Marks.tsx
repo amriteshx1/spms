@@ -2,46 +2,6 @@ type MarkProps = {
   className?: string;
 };
 
-export function RoofMark({ className }: MarkProps) {
-  return (
-    <svg
-      viewBox="0 0 32 18"
-      className={className}
-      aria-hidden="true"
-      fill="none"
-    >
-      <path
-        d="M1.5 16.5 L16 2 L30.5 16.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinejoin="miter"
-      />
-    </svg>
-  );
-}
-
-export function HouseFrame({
-  draw = false,
-  className,
-}: MarkProps & { draw?: boolean }) {
-  return (
-    <div className={`pointer-events-none absolute inset-3 ${className ?? ""}`}>
-      <svg
-        className="h-full w-full"
-        viewBox="0 0 1000 720"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <path
-          className={draw ? "house-frame-path house-frame-draw" : "house-frame-path"}
-          pathLength={1}
-          d="M 38 688 L 38 236 L 500 42 L 962 236 L 962 688 Z"
-        />
-      </svg>
-    </div>
-  );
-}
-
 export function PhoneIcon({ className }: MarkProps) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none">
@@ -64,19 +24,6 @@ export function MailIcon({ className }: MarkProps) {
   );
 }
 
-export function PinIcon({ className }: MarkProps) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none">
-      <path
-        d="M12 21s6.5-5.2 6.5-10.2A6.5 6.5 0 0 0 5.5 10.8C5.5 15.8 12 21 12 21Z"
-        stroke="currentColor"
-        strokeWidth="1.4"
-      />
-      <circle cx="12" cy="10.5" r="2.1" stroke="currentColor" strokeWidth="1.4" />
-    </svg>
-  );
-}
-
 export function ChatIcon({ className }: MarkProps) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="none">
@@ -89,3 +36,4 @@ export function ChatIcon({ className }: MarkProps) {
     </svg>
   );
 }
+
