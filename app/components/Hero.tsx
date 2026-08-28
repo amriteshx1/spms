@@ -1,6 +1,6 @@
-import Image from "next/image";
 import type { CSSProperties } from "react";
 import { company, contact, stats } from "../content";
+import { SpmsLottie } from "./SpmsLottie";
 
 const waybill = [
   { stamp: "Origin", value: "Ranchi, Jharkhand" },
@@ -18,21 +18,7 @@ export function Hero() {
       <div className="relative">
         <div className="relative z-10 flex flex-col items-center px-6 py-10 text-center sm:px-12 sm:py-12 md:px-16 md:py-14">
           <div
-            className="hero-fade w-[min(16.5rem,70vw)] md:w-[min(18rem,36vw)]"
-            style={{ "--hero-delay": "100ms" } as CSSProperties}
-          >
-            <Image
-              src="/logo.png"
-              alt="Sailanee Packers And Movers — SPMS house, crates and truck mark"
-              width={1536}
-              height={1024}
-              priority
-              className="h-auto w-full"
-            />
-          </div>
-
-          <div
-            className="hero-rise mt-5 md:mt-6"
+            className="hero-rise"
             style={{ "--hero-delay": "280ms" } as CSSProperties}
           >
             <p className="stamp mb-3">{company.lineOfWork}</p>
@@ -96,6 +82,18 @@ export function Hero() {
       >
         {company.locationLine}
       </p>
+
+      <div
+        className="hero-fade mx-auto mt-8 w-[min(20rem,82vw)] md:mt-10 md:w-[min(28rem,48vw)]"
+        style={{ "--hero-delay": "820ms" } as CSSProperties}
+      >
+        <SpmsLottie
+          src="/firstOne-spms.lottie"
+          aspectWidth={1000}
+          aspectHeight={600}
+          eager
+        />
+      </div>
     </section>
   );
 }
