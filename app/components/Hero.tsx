@@ -56,12 +56,24 @@ export function Hero() {
               WhatsApp
             </a>
           </div>
+
+          <div
+            className="hero-fade mx-auto mt-8 w-[min(20rem,82vw)] md:mt-10 md:w-[min(28rem,48vw)]"
+            style={{ "--hero-delay": "640ms" } as CSSProperties}
+          >
+            <SpmsLottie
+              src="/firstOne-spms.lottie"
+              aspectWidth={1000}
+              aspectHeight={600}
+              eager
+            />
+          </div>
         </div>
       </div>
 
       <dl
         className="hero-rise mt-6 grid grid-cols-2 border border-gold/30 md:grid-cols-4"
-        style={{ "--hero-delay": "640ms" } as CSSProperties}
+        style={{ "--hero-delay": "760ms" } as CSSProperties}
       >
         {waybill.map((item) => (
           <div
@@ -78,22 +90,10 @@ export function Hero() {
 
       <p
         className="hero-rise mt-5 text-center text-sm text-dust"
-        style={{ "--hero-delay": "760ms" } as CSSProperties}
+        style={{ "--hero-delay": "820ms" } as CSSProperties}
       >
         {company.locationLine}
       </p>
-
-      <div
-        className="hero-fade mx-auto mt-8 w-[min(20rem,82vw)] md:mt-10 md:w-[min(28rem,48vw)]"
-        style={{ "--hero-delay": "820ms" } as CSSProperties}
-      >
-        <SpmsLottie
-          src="/firstOne-spms.lottie"
-          aspectWidth={1000}
-          aspectHeight={600}
-          eager
-        />
-      </div>
     </section>
   );
 }
