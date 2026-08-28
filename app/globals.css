@@ -8,9 +8,9 @@
   --color-gold: #c6a45a;
   --color-gilt: #e6d3a1;
   --color-bronze: #7a6238;
-  --font-sans: var(--font-outfit);
-  --font-serif: var(--font-bodoni);
-  --font-stamp: var(--font-barlow);
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-dm-sans);
+  --font-stamp: var(--font-dm-sans);
 }
 
 :root {
@@ -25,7 +25,7 @@ html {
 body {
   background: var(--color-ink);
   color: var(--color-bone);
-  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.6;
 }
@@ -69,7 +69,7 @@ body {
   background: var(--color-gold);
   color: var(--color-ink);
   padding: 0.6rem 1rem;
-  font-family: var(--font-barlow), sans-serif;
+  font-family: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 0.8125rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -81,7 +81,7 @@ body {
 }
 
 .stamp {
-  font-family: var(--font-barlow), sans-serif;
+  font-family: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -96,7 +96,7 @@ body {
   min-height: 2.75rem;
   padding: 0.7rem 1.15rem;
   border-radius: 4px;
-  font-family: var(--font-barlow), sans-serif;
+  font-family: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -135,6 +135,16 @@ body {
 .btn-secondary:hover {
   color: var(--color-gilt);
   border-color: var(--color-gilt);
+}
+
+header a.btn {
+  min-height: 2.5rem;
+  padding: 0.5rem 0.95rem;
+  font-size: 0.75rem;
+}
+
+footer.bg-raised p {
+  letter-spacing: 0;
 }
 
 .house-frame-path {
@@ -223,7 +233,7 @@ body {
 }
 
 .manifest-code {
-  font-family: var(--font-barlow), sans-serif;
+  font-family: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.16em;
