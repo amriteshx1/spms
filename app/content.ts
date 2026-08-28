@@ -4,7 +4,7 @@ export const company = {
   wordmark: "SAILANEE",
   descriptor: "PACKERS AND MOVERS",
   lineOfWork: "Professional packing • moving • transportation",
-  tagline: "Protecting Your Goods Like Our Own",
+  tagline: "Always for your moving needs.",
   closingLine: "Always for your moving needs.",
   footerMotto: "Safe · Secure · Reliable",
   locationLine: "Ranchi, Jharkhand | Serving customers across India",
@@ -149,9 +149,6 @@ export const commitment =
 
 export const contact = {
   company: "Sailanee Packers And Movers",
-  address: "Dinkar Nagar, Hatia Station Road, Ranchi - 834003, Jharkhand",
-  mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Dinkar%20Nagar%20Hatia%20Station%20Road%20Ranchi%20834003%20Jharkhand",
   serviceArea: "Pan-India",
   whatsapp: {
     label: "WhatsApp",
@@ -163,16 +160,18 @@ export const contact = {
     display: "9155841841",
     href: "tel:+919155841841",
   },
-  direct: {
-    label: "Contact",
-    display: "8210564196",
-    href: "tel:+918210564196",
-  },
-  email: {
-    label: "Email",
-    display: "sailaneepms@gmail.com",
-    href: "mailto:sailaneepms@gmail.com",
-  },
+  emails: [
+    {
+      label: "Email",
+      display: "sailaneepackersmovers@gmail.com",
+      href: "mailto:sailaneepackersmovers@gmail.com",
+    },
+    {
+      label: "Email",
+      display: "sailaneepms@gmail.com",
+      href: "mailto:sailaneepms@gmail.com",
+    },
+  ],
 } as const;
 
 export const nav = [
