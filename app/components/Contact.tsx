@@ -91,7 +91,7 @@ export function Contact() {
                 >
                   {contact.form.label}
                 </a>
-                <a className="btn btn-secondary w-full" href={contact.phone.href}>
+                <a className="btn btn-secondary w-full" href={contact.call.href}>
                   Call
                 </a>
                 <a
