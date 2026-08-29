@@ -1,6 +1,5 @@
 import { company, contact } from "../content";
 import { ChatIcon, MailIcon, PhoneIcon } from "./Marks";
-import { ContactForm } from "./ContactForm";
 import { Reveal } from "./Reveal";
 
 const lines = [
@@ -32,7 +31,7 @@ export function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="mx-auto max-w-[1120px] border-t border-gold/20 px-5 py-20 sm:px-8 md:py-28"
+      className="mx-auto max-w-280 border-t border-gold/20 px-5 py-20 sm:px-8 md:py-28"
     >
       <Reveal>
         <p className="stamp mb-3">Contact</p>
@@ -43,8 +42,8 @@ export function Contact() {
           Contact Us
         </h2>
 
-        <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr] md:gap-16">
-          <div>
+        <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr] md:items-stretch md:gap-16">
+          <div className="flex flex-col md:h-full">
             <p className="stamp mb-3">Company</p>
             <p className="font-serif text-3xl font-semibold tracking-wide text-gold md:text-4xl">
               {company.wordmark}
@@ -74,26 +73,41 @@ export function Contact() {
                 ))}
               </ul>
             </address>
-
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <a className="btn btn-primary" href={contact.phone.href}>
-                Call
-              </a>
-              <a
-                className="btn btn-secondary"
-                href={contact.whatsapp.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-              <a className="btn btn-secondary" href={contact.emails[0].href}>
-                Email
-              </a>
-            </div>
           </div>
 
-          <ContactForm />
+          <div className="md:flex md:h-full md:min-h-0 md:flex-col">
+            <div className="flex min-h-88 flex-col border border-gold/25 bg-raised px-6 py-10 md:h-full md:justify-center md:px-8 md:py-12">
+              <p className="font-sans text-2xl font-medium tracking-tight text-bone">
+                {contact.form.label}
+              </p>
+              <p className="mt-3 max-w-sm text-dust">{company.tagline}</p>
+
+              <div className="mt-8 grid grid-cols-2 gap-3">
+                <a
+                  className="btn btn-primary col-span-2 w-full"
+                  href={contact.form.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {contact.form.label}
+                </a>
+                <a className="btn btn-secondary w-full" href={contact.phone.href}>
+                  Call
+                </a>
+                <a
+                  className="btn btn-secondary w-full"
+                  href={contact.whatsapp.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+                <a className="btn btn-secondary col-span-2 w-full" href={contact.emails[0].href}>
+                  Email
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </Reveal>
     </section>
