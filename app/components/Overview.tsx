@@ -7,7 +7,7 @@ export function Overview() {
     <section
       id="overview"
       aria-labelledby="overview-heading"
-      className="mx-auto max-w-[1120px] border-t border-gold/20 px-5 py-20 sm:px-8 md:py-28"
+      className="mx-auto max-w-280 border-t border-gold/20 px-5 py-20 sm:px-8 md:py-28"
     >
       <Reveal>
         <p className="stamp mb-3">Company</p>
@@ -28,7 +28,7 @@ export function Overview() {
               src="/secondOne-spms.lottie"
               aspectWidth={1700}
               aspectHeight={1000}
-              className="w-full max-w-[22rem] md:max-w-[26rem]"
+              className="w-full max-w-88 md:max-w-104"
             />
           </div>
         </div>
