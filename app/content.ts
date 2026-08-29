@@ -164,6 +164,9 @@ export const contact = {
     display: "9155841841",
     href: "tel:+919155841841",
   },
+  call: {
+    href: "tel:+919431437673",
+  },
   emails: [
     {
       label: "Email",
