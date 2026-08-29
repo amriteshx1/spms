@@ -1,23 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Barlow_Condensed, Bodoni_Moda, Outfit } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
-});
-
-const bodoni = Bodoni_Moda({
-  variable: "--font-bodoni",
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
-
-const barlow = Barlow_Condensed({
-  variable: "--font-barlow",
-  subsets: ["latin"],
-  weight: ["500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -36,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${bodoni.variable} ${barlow.variable} h-full antialiased`}
+      className={`${dmSans.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col overflow-x-clip bg-ink text-bone">{children}</body>
     </html>
