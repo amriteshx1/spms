@@ -161,8 +161,8 @@ export const contact = {
   },
   phone: {
     label: "Phone",
-    display: "9155841841",
-    href: "tel:+919155841841",
+    display: "9431437673",
+    href: "tel:+919431437673",
   },
   call: {
     href: "tel:+919431437673",
