@@ -30,7 +30,7 @@ export function Header() {
           </a>
 
           <div className="flex shrink-0 items-center gap-2 md:hidden">
-            <a className="btn btn-primary min-w-0 px-3.5" href={contact.phone.href}>
+            <a className="btn btn-primary min-w-0 px-3.5" href={contact.call.href}>
               Call
             </a>
           </div>
@@ -51,7 +51,7 @@ export function Header() {
           </ul>
 
           <div className="hidden items-center gap-2 md:flex">
-            <a className="btn btn-primary min-w-26" href={contact.phone.href}>
+            <a className="btn btn-primary min-w-26" href={contact.call.href}>
               Call
             </a>
             <a
