@@ -150,6 +150,10 @@ export const commitment =
 export const contact = {
   company: "Sailanee Packers And Movers",
   serviceArea: "Pan-India",
+  form: {
+    label: "Request a move",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSfh85hDumVHJEL-qLtBc-p7KmUnR-PgYnd5pbHsY6jhOmqD_A/viewform",
+  },
   whatsapp: {
     label: "WhatsApp",
     display: "9431437673",
