@@ -12,7 +12,7 @@ const waybill = [
 export function Hero() {
   return (
     <section
-      className="mx-auto flex w-full max-w-[1120px] flex-col px-5 pb-10 pt-6 sm:px-8 md:min-h-[calc(100svh-5.5rem)] md:justify-center md:pt-8"
+      className="mx-auto flex w-full max-w-280 flex-col px-5 pb-10 pt-6 sm:px-8 md:min-h-[calc(100svh-5.5rem)] md:justify-center md:pt-8"
       aria-labelledby="hero-title"
     >
       <div className="relative">
@@ -44,16 +44,16 @@ export function Hero() {
             className="hero-rise mt-8 flex w-full max-w-md flex-col gap-3 sm:flex-row sm:justify-center"
             style={{ "--hero-delay": "520ms" } as CSSProperties}
           >
-            <a className="btn btn-primary" href={contact.phone.href}>
-              Call now
-            </a>
             <a
-              className="btn btn-secondary"
-              href={contact.whatsapp.href}
+              className="btn btn-primary"
+              href={contact.form.href}
               target="_blank"
               rel="noopener noreferrer"
             >
-              WhatsApp
+              {contact.form.label}
+            </a>
+            <a className="btn btn-secondary" href={contact.phone.href}>
+              Call now
             </a>
           </div>
 
