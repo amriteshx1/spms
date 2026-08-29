@@ -52,7 +52,7 @@ export function Hero() {
             >
               {contact.form.label}
             </a>
-            <a className="btn btn-secondary" href={contact.phone.href}>
+            <a className="btn btn-secondary" href={contact.call.href}>
               Call now
             </a>
           </div>
